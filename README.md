@@ -30,6 +30,10 @@
   * `alapi_token`：填入申请的alapi token。
 
   * `morning_news_text_enabled`：默认false，发送早报图片；true，发送文字版早报。
+ 
+  * `is_key`：填入申请的alapi key。
+ 
+  * `is_sd_domain`：填入部署SD的网站域名。
 
 * docker部署：参考项目docker部署的[插件使用](https://github.com/zhayujie/chatgpt-on-wechat#3-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)，在挂载的config.json配置文件内增加`apilot`插件的配置参数，如下图，每次重启项目，需要使用 `#installp` 指令重新安装
 
