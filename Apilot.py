@@ -220,29 +220,7 @@ class Apilot(Plugin):
                     return self.handle_error(morning_news_info, "get_morning_news失败")
             except Exception as e:
                 return self.handle_error(e, "早报获取失败")
-        else:
-            url = BASE_URL_ALAPI + "zaobao"
-            payload = f"token={alapi_token}&format=json"
-            headers = {'Content-Type': "application/x-www-form-urlencoded"}
-            try:
-                morning_news_info = self.make_request(url, method="POST", headers=headers, data=payload)
-                if isinstance(morning_news_info, dict) and morning_news_info.get('code') == 200:
-                    img_url = morning_news_info['data']['image']
-                    if morning_news_text_enabled:
-                        news_list = morning_news_info['data']['news']
-                        weiyu = morning_news_info['data']['weiyu']
-
-                        # 整理新闻为有序列表
-                        formatted_news = f"☕ {morning_news_info['data']['date']}  今日早报\n"
-                        formatted_news = formatted_news + "\n".join(news_list)
-                        # 组合新闻和微语
-                        return f"{formatted_news}\n\n{weiyu}\n\n 图片url：{img_url}"
-                    else:
-                        return img_url
-                else:
-                    return self.handle_error(morning_news_info, "get_morning_news失败")
-            except Exception as e:
-                return self.handle_error(e, "早报获取失败")
+       
 
     def get_moyu_calendar(self):
         url = BASE_URL_VVHAN + "moyu?type=json"
