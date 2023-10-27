@@ -6,7 +6,7 @@
 
 以及增加了随机头像，职场人日历的接口
 
-如果使用SD需要配合PHP网站使用
+如果使用SD需要配合PHP网站使用 源码这里(https://github.com/NangGong/PHP ON SD)！
 
 ### 安装
 
