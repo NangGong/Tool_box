@@ -201,7 +201,6 @@ class Apilot(Plugin):
         return help_text
 
     def get_morning_news(self, alapi_token, morning_news_text_enabled):
-        if not alapi_token:
             url = BASE_URL_VVHAN + "60s?type=json"
             payload = "format=json"
             headers = {'Content-Type': "application/x-www-form-urlencoded"}
