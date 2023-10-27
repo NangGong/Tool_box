@@ -8,6 +8,8 @@
 
 如果使用SD需要配合PHP网站使用 [源码这里](https://github.com/NangGong/SD-ON-PHP)！
 
+<img src="img/SD.png" width="600" >
+
 ### 安装
 
 使用管理员口令在线安装即可，参考这里去如何[认证管理员](https://www.wangpc.cc/aigc/chatgpt-on-wechat_plugin/)！
