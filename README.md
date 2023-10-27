@@ -31,7 +31,7 @@
 
   * `morning_news_text_enabled`：默认false，发送早报图片；true，发送文字版早报。
  
-  * `is_key`：填入申请的alapi key。
+  * `is_key`：填入申请的IS_api key。
  
   * `is_sd_domain`：填入部署SD的网站域名。
 
