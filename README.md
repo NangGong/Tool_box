@@ -1,5 +1,10 @@
 ## 一个基于[ChatGPT-on-Wechat](https://github.com/zhayujie/chatgpt-on-wechat)项目的简单插件，直接调用一些实用的api接口！
 
+##基于Apilot插件新增了点内容
+*增加了调用第三方SD绘画
+*以及增加了随机头像，职场人日历的接口
+如果使用SD需要配合PHP网站使用
+
 ### 安装
 
 使用管理员口令在线安装即可，参考这里去如何[认证管理员](https://www.wangpc.cc/aigc/chatgpt-on-wechat_plugin/)！
